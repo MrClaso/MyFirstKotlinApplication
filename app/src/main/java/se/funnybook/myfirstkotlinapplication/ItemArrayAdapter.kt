@@ -15,7 +15,7 @@ class ItemArrayAdapter(private val dataSet: ArrayList<Item>) :
      * (custom ViewHolder).
      */
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val item: LinearLayout
+        private val item: LinearLayout
         val textView: TextView
 
         init {
@@ -44,5 +44,4 @@ class ItemArrayAdapter(private val dataSet: ArrayList<Item>) :
 
     // Return the size of your dataset (invoked by the layout manager)
     override fun getItemCount() = dataSet.size
-
 }
